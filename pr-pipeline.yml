@@ -3,7 +3,10 @@ trigger:
     exclude:
     - master
 
-pr: none
+pr:
+  branches:
+    include:
+      - '*'
 
 pool:
   vmImage: 'ubuntu-latest'
